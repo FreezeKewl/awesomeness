@@ -1,0 +1,144 @@
+
+430user14@H430-BITC14 MINGW64 ~
+$ cd desktop
+
+430user14@H430-BITC14 MINGW64 ~/desktop
+$ cd awesomeness
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   jerry.html
+        new file:   joe.html
+        new file:   tom.html
+
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/430user14/Desktop/awesomeness/.git/
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$  git add .
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   jerry.html
+        new file:   joe.html
+        new file:   tom.html
+
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git log
+commit 6e6c2f714b17fe2f2b39bcd07f7b895d17992974
+Author: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Date:   Wed Feb 22 19:48:25 2017 -0500
+
+    initial commit
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git commit -m "initialization"
+[master ed69f62] initialization
+ Committer: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jerry.html
+ create mode 100644 joe.html
+ create mode 100644 tom.html
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ touch profile.html
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git add .
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git commit -m "hi"
+[master af31d6e] hi
+ Committer: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 profile.html
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ ^C
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git config --global user.name "Your Name"
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git checkout -b "in"
+Switched to a new branch 'in'
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (in)
+$ touch in.html im.js
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (in)
+$ git checkout -b "im"
+Switched to a new branch 'im'
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (im)
+$ git checkout master
+Switched to branch 'master'
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git checkout -b "im"
+fatal: A branch named 'im' already exists.
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git merge im
+Already up-to-date.
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git log
+commit af31d6ecc55529fbb7d2122256874e3fa912e569
+Author: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Date:   Wed Feb 22 20:18:21 2017 -0500
+
+    hi
+
+commit ed69f627ddf5ed14c18389cf2f028a1b86033dbe
+Author: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Date:   Wed Feb 22 20:17:04 2017 -0500
+
+    initialization
+
+commit 6e6c2f714b17fe2f2b39bcd07f7b895d17992974
+Author: FreezeKewl <430user14@cenet.citytech.cuny.edu>
+Date:   Wed Feb 22 19:48:25 2017 -0500
+
+    initial commit
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ cd -desktop/awesomeness
+bash: cd: -d: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+
+430user14@H430-BITC14 MINGW64 ~/desktop/awesomeness (master)
+$ git reset --hard
