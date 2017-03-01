@@ -1,0 +1,10 @@
+*{
+	font-family: 'helvetica';
+	color: #777;
+	/*box-sizing: border-box;*/
+}
+
+
+nav{
+	background-color: rgb(21,02,03); 
+}
